@@ -145,8 +145,6 @@ public class ObrasViniciusFrame extends javax.swing.JFrame {
             }
         });
 
-        imagemObra.setText("|");
-
         botaoVolta.setText("Voltar");
         botaoVolta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

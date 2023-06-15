@@ -14,15 +14,11 @@ import javax.swing.JOptionPane;
  */
 public class AutoursFrame extends javax.swing.JFrame {
 
-    ImageIcon ImageCarlos = new ImageIcon("carlos.png"); 
-    ImageIcon ImageVinicius = new ImageIcon("vinicius.png");
-    ImageIcon ImageCecilia = new ImageIcon("cecilia.png");
-    
-    //Aqui está sendo criada objetos que são usados para representar uma imagem que será exibida na interface gráfica.
+   
     
     public AutoursFrame() {
         initComponents();
-        this.setLocation(500,200); //Indica a localização aonde a janela será gerada
+        this.setLocation(300,200); //Indica a localização aonde a janela será gerada
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Indica que quando o usuário fechar a janela, todos os processos serão finalizados
         this.setTitle("Autores"); //Indica o título da janela
     }
@@ -38,30 +34,23 @@ public class AutoursFrame extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         imagemCarlos = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         SaibaMaisCarlos = new javax.swing.JButton();
         SaibaMaisVinicius = new javax.swing.JButton();
         imagemVinicius = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         SaibaMaisCarlos2 = new javax.swing.JButton();
         imagemCecilia = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel1.setText("Principais autores do modernismo brasileiro");
-
-        jButton1.setText("Carlos Drummond");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("Aperte no botão para ver a imagem do autor");
 
         SaibaMaisCarlos.setText("Saiba Mais!");
         SaibaMaisCarlos.addActionListener(new java.awt.event.ActionListener() {
@@ -77,24 +66,10 @@ public class AutoursFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Vinicius de Moraes");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
         SaibaMaisCarlos2.setText("Saiba Mais!");
         SaibaMaisCarlos2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaibaMaisCarlos2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setText("Cecília Meireles");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
             }
         });
 
@@ -105,6 +80,22 @@ public class AutoursFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carlos.png"))); // NOI18N
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setText("Carlos Drummond");
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vinicius.png"))); // NOI18N
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cecilia.png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setText("Vinicius de Moraes");
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel7.setText("Cecília Meireles");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -112,87 +103,93 @@ public class AutoursFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
+                        .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(imagemCarlos, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jButton1))))
+                                .addGap(44, 44, 44)
+                                .addComponent(imagemCarlos, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(55, 55, 55)
-                        .addComponent(SaibaMaisCarlos)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(SaibaMaisCarlos))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, Short.MAX_VALUE)
+                        .addGap(88, 88, 88)
+                        .addComponent(jLabel4)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(18, 109, Short.MAX_VALUE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(imagemVinicius, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(imagemVinicius, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(21, 21, 21)
-                                        .addComponent(jButton2)))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(imagemCecilia, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(21, 21, 21)
-                                        .addComponent(jButton3))))
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(111, 111, 111)
+                                .addComponent(imagemCecilia, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel3))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(53, 53, 53))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
+                        .addGap(170, 170, 170)
                         .addComponent(SaibaMaisVinicius)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(SaibaMaisCarlos2)
-                        .addGap(51, 51, 51)))
-                .addGap(57, 57, 57))
+                        .addGap(189, 189, 189))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(165, 165, 165)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7)
+                        .addGap(192, 192, 192))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(288, 288, 288)
-                .addComponent(jButton4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(450, 450, 450)
+                        .addComponent(jButton4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(416, 416, 416)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addGap(12, 12, 12)
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(jLabel4)
                         .addGap(18, 18, 18)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(imagemCarlos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 291, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(SaibaMaisCarlos)
-                            .addComponent(SaibaMaisVinicius)
-                            .addComponent(SaibaMaisCarlos2))
-                        .addGap(24, 24, 24))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                        .addComponent(SaibaMaisCarlos)
+                        .addGap(62, 62, 62))
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel7))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton3)
+                                .addComponent(jLabel6)
                                 .addGap(18, 18, 18)
                                 .addComponent(imagemCecilia))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton2)
-                                .addGap(18, 18, 18)
-                                .addComponent(imagemVinicius)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jButton4)
-                .addContainerGap())
+                            .addComponent(jLabel5)
+                            .addComponent(imagemVinicius))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SaibaMaisCarlos2)
+                            .addComponent(SaibaMaisVinicius))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton4)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        imagemCarlos.setIcon(ImageCarlos); //Aqui estamos indicando ao JLabel que uma imagem será gerada ao apertar o botão
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void SaibaMaisCarlosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaibaMaisCarlosActionPerformed
         new SaibaCarlosFrame().setVisible(true);
@@ -206,19 +203,11 @@ public class AutoursFrame extends javax.swing.JFrame {
         //Quando o usuário apertar o botão uma nova janela será criada e a janela aberta se fechará
     }//GEN-LAST:event_SaibaMaisViniciusActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        imagemVinicius.setIcon(ImageVinicius); //Aqui estamos indicando ao JLabel que uma imagem será gerada ao apertar o botão
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void SaibaMaisCarlos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaibaMaisCarlos2ActionPerformed
         new SaibaCeciliaFrame().setVisible(true);
         dispose();
         //Quando o usuário apertar o botão uma nova janela será criada e a janela aberta se fechará
     }//GEN-LAST:event_SaibaMaisCarlos2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        imagemCecilia.setIcon(ImageCecilia); //Aqui estamos indicando ao JLabel que uma imagem será gerada ao apertar o botão
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         new AutoursFrame().setVisible(false);
@@ -271,11 +260,13 @@ public class AutoursFrame extends javax.swing.JFrame {
     private javax.swing.JLabel imagemCarlos;
     private javax.swing.JLabel imagemCecilia;
     private javax.swing.JLabel imagemVinicius;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 }

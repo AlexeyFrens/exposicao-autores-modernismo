@@ -144,8 +144,6 @@ public class ObrasCeciliaFrame extends javax.swing.JFrame {
             }
         });
 
-        imagemObras.setText("|");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(

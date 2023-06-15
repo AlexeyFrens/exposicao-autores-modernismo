@@ -216,9 +216,6 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="imagemObras">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="|"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>
